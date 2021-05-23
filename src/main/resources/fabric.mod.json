@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "extension",
+  "version": "${version}",
+
+  "name": "Gamerule Helper API",
+  "description": "A Gamerule API for easy declaration/accessing for Fabric/Quilt",
+  "authors": [
+    "Oliver-makes-code"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Oliver-makes-code",
+    "sources": "https://github.com/Oliver-makes-code/gamerule-helper-api"
+  },
+
+  "license": "MIT",
+  "icon": "assets/grhelp/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "grhelp.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+  }
+}

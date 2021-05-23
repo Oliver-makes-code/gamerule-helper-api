@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.olivermakescode.gamerulehelper.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "UpdateGrMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
