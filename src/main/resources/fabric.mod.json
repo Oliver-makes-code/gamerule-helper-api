@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "extension",
+  "id": "grhelp",
   "version": "${version}",
 
   "name": "Gamerule Helper API",
