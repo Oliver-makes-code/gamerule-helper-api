@@ -22,9 +22,6 @@
       "com.github.olivermakescode.gamerulehelper.GameruleHelper"
     ]
   },
-  "mixins": [
-    "grhelp.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
