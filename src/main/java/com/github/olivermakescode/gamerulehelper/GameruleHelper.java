@@ -1,6 +1,5 @@
 package com.github.olivermakescode.gamerulehelper;
 
-
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.server.MinecraftServer;

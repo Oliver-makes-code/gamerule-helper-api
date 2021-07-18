@@ -11,10 +11,12 @@ import net.minecraft.world.GameRules;
 
 public class BoolRuleHelper implements GameRuleInterface {
     private boolean value;
-    private GameRules.Key<GameRules.BooleanRule> rule;
+    private final boolean defaultValue;
+    private final GameRules.Key<GameRules.BooleanRule> rule;
 
     public BoolRuleHelper(String name, boolean defaultValue) {
         this.value = defaultValue;
+        this.defaultValue = defaultValue;
         this.rule = GameRuleRegistry.register(name, GameRules.Category.MISC, GameRuleFactory.createBooleanRule(defaultValue));
     }
 
@@ -27,6 +29,7 @@ public class BoolRuleHelper implements GameRuleInterface {
     public boolean getValue() {
         if (GameruleHelper.server != null)
             this.updateValue();
+        else this.value = this.defaultValue;
         return this.value;
     }
 }
